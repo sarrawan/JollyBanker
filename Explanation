@@ -1,0 +1,15 @@
+For Lab 5, I have 6 classes: Bank, Account, ApplyTransactions, CheckTransactions, Funds, 
+BSTree. The Bank class deals with reading in the file into a queue, executing all the 
+transactions from the queue, and printing out the open accounts. The Account class is 
+for each of the accounts in the Bank. It keeps track of the first and last name and the 
+account ID. This class also keeps track of all the funds and the history of transactions 
+for each account. The Account class deals with the Funds class, with each account having 
+an array of 10 funds (1 for each of the 10 funds an account can have). The Funds class is 
+for keeping track of the balance in each of the funds for an account and the history of 
+the single fund. The ApplyTransactions class is what actually executes each of the 
+transactions. However, before the transactions are executed, the CheckTransactions class 
+makes sure the transaction is valid and can be done. For example, the CheckTransactions class
+will check to make sure that there are no duplicates of accounts before opening a new account.
+The BSTree class has all the accounts in the bank and is placed in the private part of the 
+Bank class. Traversing through the tree at the end for phase 3 will print out all the open 
+accounts and their balances in the funds. 
